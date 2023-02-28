@@ -6,5 +6,6 @@ export {
   getUserId,
   initAnalytics,
 } from './analytics';
+export { AppName } from './analytics/CustomTransport';
 export { user } from './analytics/user';
 export * from './analytics/utils';
