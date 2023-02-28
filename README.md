@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/@spectrumlabs%2Fanalytics.svg)](https://badge.fury.io/js/@spectrumlabs%2Fanalytics)
 
-The `@spectrumlabs/analytics` package is used across Spectrum Finance applications to gather non-identified user data.
+The `@spectrumlabs/analytics` package is used across Spectrum Finance applications to gather non-identified user data and improve those products using this data.
 
 The package uses `@amplitude/analytics-browser` (Amplitude SDK) under the hood.
 
