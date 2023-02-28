@@ -4,8 +4,8 @@
 
 The `@spectrumlabs/analytics` package is used across Spectrum Finance application to gather non-identified user data.
 
-## Type safe
+The package uses `@amplitude/analytics-browser` (Amplitude SDK) under the hood.
 
-## Legal
+## Legal notice
 
 Spectrum Labs encourages integrators to evaluate their own regulatory obligations when integrating this package into their products, including, but not limited to, those related to economic or trade sanctions compliance.
