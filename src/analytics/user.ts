@@ -11,6 +11,7 @@ type SetUserProps = {
   screen_resolution_width: number;
   network_active: AnalyticsValNetwork;
   theme_active: string;
+  locale_active: string;
   address_active_ergo: string;
   address_active_cardano: string;
 };
