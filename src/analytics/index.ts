@@ -97,7 +97,7 @@ export function getSessionId(): number | undefined {
 
 export function fireAnalyticsEvent(
   eventName: keyof AnalyticsEvents,
-  eventProps?: AnalyticsEvents[keyof AnalyticsEvents],
+  eventProps: AnalyticsEvents[keyof AnalyticsEvents],
 ): void {
   const origin = window.location.origin;
 
