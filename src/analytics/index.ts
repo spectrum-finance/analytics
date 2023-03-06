@@ -98,6 +98,7 @@ export function getSessionId(): number | undefined {
 export function fireAnalyticsEvent(
   eventName: keyof AnalyticsEvents,
   eventProps: AnalyticsEvents[keyof AnalyticsEvents],
+  network?: string,
 ): void {
   const origin = window.location.origin;
 
@@ -107,6 +108,11 @@ export function fireAnalyticsEvent(
       eventName,
       eventProperties: { ...eventProps, origin },
     });
+  }
+
+  if (network) {
+    track(eventName, { ...eventProps, origin, network });
+    return;
   }
 
   track(eventName, { ...eventProps, origin });
