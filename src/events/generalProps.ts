@@ -29,7 +29,7 @@ export type LiquidityOperationBasedProps = {
 export type OperationSettingsProps = {
   settings_slippage: number;
   settings_nitro: number;
-  settings_fee_currency: 'erg' | 'spf' | 'ada';
+  settings_fee_currency: FeeCurrency;
 };
 
 export type ErrorProps = {
@@ -50,6 +50,12 @@ export type ElementLocationProps = {
     | 'relock-liquidity-form'
     | 'chaining-modal';
 };
+
+export type FeeCurrency =
+  | 'ergo-erg'
+  | 'ergo-spf'
+  | 'cardano-ada'
+  | 'cardano-spf';
 
 export type LocaleProps = {
   locale: string;
