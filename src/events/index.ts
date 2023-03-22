@@ -4,6 +4,11 @@ import { RedeemEvents } from './redeem/events';
 import { SwapEvents } from './swap/events';
 import { WalletEvents } from './wallet/events';
 
+export { DepositProps } from './deposit/props';
+export { RedeemProps } from './redeem/props';
+export { SwapProps } from './swap/props';
+export { WalletProps } from './wallet/props';
+
 export type AnalyticsEvents = GeneralEvents &
   SwapEvents &
   DepositEvents &
