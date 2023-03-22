@@ -98,21 +98,15 @@ export function getSessionId(): number | undefined {
 export function fireAnalyticsEvent(
   eventName: keyof AnalyticsEvents,
   eventProps: AnalyticsEvents[keyof AnalyticsEvents],
-  network?: string,
 ): void {
   const origin = window.location.origin;
 
   if (analyticsConfig?.isDebug) {
     // eslint-disable-next-line no-console
-    console.log({
+    console.log('[amplitude(Event)]:', {
       eventName,
       eventProperties: { ...eventProps, origin },
     });
-  }
-
-  if (network) {
-    track(eventName, { ...eventProps, origin, network });
-    return;
   }
 
   track(eventName, { ...eventProps, origin });
