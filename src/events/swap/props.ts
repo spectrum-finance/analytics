@@ -1,4 +1,8 @@
-import { AmmPoolProps, OperationSettingsProps } from '../generalProps';
+import {
+  AmmPoolProps,
+  NetworkProps,
+  OperationSettingsProps,
+} from '../generalProps';
 
 export type SwapProps = {
   from_name: string;
@@ -10,4 +14,5 @@ export type SwapProps = {
   to_usd: number;
   to_id: string;
 } & OperationSettingsProps &
-  AmmPoolProps;
+  AmmPoolProps &
+  NetworkProps;

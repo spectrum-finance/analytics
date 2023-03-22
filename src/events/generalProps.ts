@@ -29,7 +29,7 @@ export type LiquidityOperationBasedProps = {
 export type OperationSettingsProps = {
   settings_slippage: number;
   settings_nitro: number;
-  settings_fee_currency: 'erg' | 'spf';
+  settings_fee_currency: 'erg' | 'spf' | 'ada';
 };
 
 export type ErrorProps = {
