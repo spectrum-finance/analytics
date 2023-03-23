@@ -95,9 +95,11 @@ export function getSessionId(): number | undefined {
   return getAmplitudeSessionId();
 }
 
-export function fireAnalyticsEvent(
-  eventName: keyof AnalyticsEvents,
-  eventProps: AnalyticsEvents[keyof AnalyticsEvents],
+export function fireAnalyticsEvent<T extends keyof AnalyticsEvents>(
+  eventName: T,
+  ...eventProps: AnalyticsEvents[T] extends undefined
+    ? [undefined?]
+    : [AnalyticsEvents[T]]
 ): void {
   const origin = window.location.origin;
 
