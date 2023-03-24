@@ -1,3 +1,5 @@
+import { ElementLocation, ElementName } from '../primitives';
+
 export type WebVitalsProps =
   | { cumulative_layout_shift: number }
   | { first_contentful_paint_ms: number }
@@ -36,20 +38,20 @@ export type ErrorProps = {
   error_string: string;
 };
 
-export type ElementLocationProps = {
-  element_location:
-    | 'header'
-    | 'footer'
-    | 'swap-form'
-    | 'deposit-form'
-    | 'redeem-form'
-    | 'pool-overview-list'
-    | 'create-pool-form'
-    | 'your-positions-list'
-    | 'withdrawal-liquidity-form'
-    | 'relock-liquidity-form'
-    | 'chaining-modal';
-};
+// export type ElementLocationProps = {
+//   element_location:
+//     | 'header'
+//     | 'footer'
+//     | 'swap-form'
+//     | 'deposit-form'
+//     | 'redeem-form'
+//     | 'pool-overview-list'
+//     | 'create-pool-form'
+//     | 'your-positions-list'
+//     | 'withdrawal-liquidity-form'
+//     | 'relock-liquidity-form'
+//     | 'chaining-modal';
+// };
 
 export type FeeCurrency =
   | 'ergo-erg'
@@ -69,6 +71,7 @@ export type ThemeProps = {
   theme: 'light' | 'dark' | 'system';
 };
 
-export type AnalyticsTrace = {
-  elementLocation: ElementLocationProps['element_location'];
+export type TraceProps = {
+  element_location: ElementLocation;
+  element_name: ElementName;
 };
