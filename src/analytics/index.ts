@@ -111,5 +111,5 @@ export function fireAnalyticsEvent<T extends keyof AnalyticsEvents>(
     });
   }
 
-  track(eventName, { ...eventProps, origin });
+  track(eventName, { ...eventProps[0], origin });
 }
