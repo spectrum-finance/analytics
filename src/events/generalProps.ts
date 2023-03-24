@@ -1,4 +1,4 @@
-import { ElementLocation, ElementName } from '../primitives';
+import { ElementLocation, ElementName } from './primitives';
 
 export type WebVitalsProps =
   | { cumulative_layout_shift: number }

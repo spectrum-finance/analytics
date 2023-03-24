@@ -12,4 +12,4 @@ export * from './analytics/utils';
 export * from './events';
 export * from './events/generalEvents';
 export * from './events/generalProps';
-export * from './primitives';
+export * from './events/primitives';
