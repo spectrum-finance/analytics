@@ -1,9 +1,9 @@
 import {
-  ElementLocationProps,
   LocaleProps,
   NetworkProps,
   ThemeProps,
   TokenProps,
+  TraceProps,
   WebVitalsProps,
 } from './generalProps';
 
@@ -20,8 +20,8 @@ export type GeneralEvents = {
   'Select Theme': ThemeProps;
   'Select Locale': LocaleProps;
 
-  'Open Select Token Modal': ElementLocationProps;
-  'Select Token': TokenProps & ElementLocationProps;
+  'Open Select Token Modal': TraceProps;
+  'Select Token': TokenProps & TraceProps;
 
-  'Click MAX Button': TokenProps & ElementLocationProps;
+  'Click MAX Button': TokenProps & TraceProps;
 };

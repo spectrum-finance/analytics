@@ -1,3 +1,5 @@
+import { ElementLocation, ElementName } from './primitives';
+
 export type WebVitalsProps =
   | { cumulative_layout_shift: number }
   | { first_contentful_paint_ms: number }
@@ -52,4 +54,9 @@ export type NetworkProps = {
 
 export type ThemeProps = {
   theme: 'light' | 'dark' | 'system';
+};
+
+export type TraceProps = {
+  element_location: ElementLocation;
+  element_name: ElementName;
 };
