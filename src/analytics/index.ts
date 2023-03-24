@@ -103,13 +103,15 @@ export function fireAnalyticsEvent<T extends keyof AnalyticsEvents>(
 ): void {
   const origin = window.location.origin;
 
+  const props = { ...eventProps[0], origin };
+
   if (analyticsConfig?.isDebug) {
     // eslint-disable-next-line no-console
     console.log('[amplitude(Event)]:', {
       eventName,
-      eventProperties: { ...eventProps, origin },
+      eventProperties: props,
     });
   }
 
-  track(eventName, { ...eventProps[0], origin });
+  track(eventName, props);
 }
