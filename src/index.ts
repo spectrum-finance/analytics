@@ -13,3 +13,4 @@ export * from './events';
 export * from './events/generalEvents';
 export * from './events/generalProps';
 export * from './events/primitives';
+export { TraceProps } from './events/trace';
