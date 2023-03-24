@@ -7,6 +7,7 @@ export type DepositEvents = {
   'Deposit Modal Confirm Error': DepositProps & ErrorProps;
   'Deposit Signed Success': DepositProps;
   'Deposit Signed Error': DepositProps & ErrorProps;
+  'Deposit Cancel Sign': DepositProps;
   'Deposit Select X': TokenProps;
   'Deposit Select Y': TokenProps;
   'Deposit Click 25%': undefined;

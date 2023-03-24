@@ -7,4 +7,5 @@ export type RedeemEvents = {
   'Redeem Modal Confirm Error': RedeemProps & ErrorProps;
   'Redeem Sign Success': RedeemProps;
   'Redeem Sign Error': RedeemProps & ErrorProps;
+  'Redeem Cancel Sign': RedeemProps;
 };
