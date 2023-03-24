@@ -17,7 +17,6 @@ export type GeneralEvents = {
   'Cookies Rejected': undefined;
 
   'Select Network': NetworkProps;
-
   'Select Theme': ThemeProps;
   'Select Locale': LocaleProps;
 

@@ -68,3 +68,7 @@ export type NetworkProps = {
 export type ThemeProps = {
   theme: 'light' | 'dark' | 'system';
 };
+
+export type AnalyticsTrace = {
+  elementLocation: ElementLocationProps['element_location'];
+};
