@@ -19,7 +19,5 @@ export enum ElementName {
   tokenTo = 'token-to',
   tokenX = 'token-x',
   tokenY = 'token-y',
-
-  // For tests
-  someElement = 'some-element',
+  connectWalletButton = 'connect-wallet-button',
 }

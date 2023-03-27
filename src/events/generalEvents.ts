@@ -20,7 +20,7 @@ export type GeneralEvents = {
   'Select Theme': ThemeProps;
   'Select Locale': LocaleProps;
 
-  'Open Select Token Modal': TraceProps;
+  // 'Open Select Token Modal': TraceProps;
   'Select Token': TokenProps & TraceProps;
 
   'Click MAX Button': TokenProps & TraceProps;
