@@ -12,6 +12,7 @@ export enum ElementLocation {
   chainingModal = 'chaining-modal',
   farmsList = 'farmsList',
   createFarmForm = 'create-farm-form',
+  poolPosition = 'pool-position',
 }
 
 export enum ElementName {
