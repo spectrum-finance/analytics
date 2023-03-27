@@ -9,7 +9,7 @@ import {
 
 export type GeneralEvents = {
   'Page Viewed': undefined;
-  'App Launched': undefined;
+  'App Loaded': undefined;
 
   'Web Vitals': WebVitalsProps;
 
