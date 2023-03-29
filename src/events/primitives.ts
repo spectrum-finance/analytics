@@ -22,3 +22,11 @@ export enum ElementName {
   tokenY = 'token-y',
   connectWalletButton = 'connect-wallet-button',
 }
+
+export enum AnalyticsOperationName {
+  swap = 'swap',
+  deposit = 'deposit',
+  redeem = 'redeem',
+  stakeLq = 'stake-lq',
+  unstakeLq = 'unstake-lq',
+}
