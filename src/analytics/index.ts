@@ -12,7 +12,6 @@ import { AppName, CustomTransport } from './CustomTransport';
 export type AnalyticsConfig = {
   proxyUrl?: string;
   commitHash?: string;
-  defaultEventName?: string;
   version?: string;
   // If false or undefined, does not set user properties on the Amplitude client
   isProdEnv?: boolean;
