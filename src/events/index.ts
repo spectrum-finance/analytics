@@ -1,4 +1,5 @@
 import { DepositEvents } from './deposit/events';
+import { FarmEvents } from './farm/events';
 import { GeneralEvents } from './generalEvents';
 import { RedeemEvents } from './redeem/events';
 import { SwapEvents } from './swap/events';
@@ -14,4 +15,5 @@ export type AnalyticsEvents = GeneralEvents &
   SwapEvents &
   DepositEvents &
   RedeemEvents &
-  WalletEvents;
+  WalletEvents &
+  FarmEvents;
