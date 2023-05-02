@@ -22,4 +22,5 @@ export type FarmEvents = {
   'Farm Unstake Confirm Modal Error': FarmProps & StakeProps & ErrorProps;
   'Farm Unstake Sign Success': FarmProps & StakeProps;
   'Farm Unstake Sign Error': FarmProps & StakeProps & ErrorProps;
+  'Farm Unstake Cancel Sign': FarmProps & StakeProps;
 };
