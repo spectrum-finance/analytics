@@ -1,3 +1,4 @@
+import { AnalyticsNetwork } from '../@types/types';
 import { ElementLocation, ElementName } from './primitives';
 
 export type WebVitalsProps =
@@ -49,7 +50,7 @@ export type LocaleProps = {
 };
 
 export type NetworkProps = {
-  network: 'ergo' | 'cardano';
+  network: AnalyticsNetwork;
 };
 
 export type ThemeProps = {
