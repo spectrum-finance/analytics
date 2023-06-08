@@ -1,15 +1,14 @@
 import { Identify, identify } from '@amplitude/analytics-browser';
 
+import { AnalyticsNetwork } from '../@types/types';
 import { analyticsConfig } from '.';
-
-type AnalyticsValNetwork = 'ergo' | 'cardano';
 
 type SetUserProps = {
   browser: string;
   user_agent: string;
   screen_resolution_height: number;
   screen_resolution_width: number;
-  network_active: AnalyticsValNetwork;
+  network_active: AnalyticsNetwork;
   theme_active: string;
   locale_active: string;
   address_active_ergo: string;
@@ -22,7 +21,7 @@ type SetOnceUserProps = {
   cohort_month: number;
   cohort_year: number;
   cohort_version: string;
-  network_joined: AnalyticsValNetwork;
+  network_joined: AnalyticsNetwork;
 };
 
 type PostInsertUserProps = {
