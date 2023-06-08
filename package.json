@@ -1,7 +1,7 @@
 {
   "name": "@spectrumlabs/analytics",
   "description": "Amplitude analytics lib for Spectrum Finance dApps.",
-  "version": "1.0.28",
+  "version": "1.1.7",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
