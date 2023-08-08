@@ -1,1 +1,1 @@
-export type AnalyticsNetwork = 'ergo' | 'cardano_preview' | 'cardano_mainnet';
+export type AnalyticsNetwork = 'ergo' | 'cardano_preview' | 'cardano';
