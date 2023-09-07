@@ -13,6 +13,7 @@ export enum ElementLocation {
   farmsList = 'farmsList',
   createFarmForm = 'create-farm-form',
   poolPosition = 'pool-position',
+  rewardsPage = 'rewards-page',
 }
 
 export enum ElementName {

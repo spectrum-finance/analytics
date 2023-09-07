@@ -54,7 +54,7 @@ export type NetworkProps = {
 };
 
 export type ThemeProps = {
-  theme: 'light' | 'dark' | 'system';
+  theme: string;
 };
 
 export type TraceProps = {
